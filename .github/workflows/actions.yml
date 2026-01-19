@@ -17,3 +17,6 @@ jobs:
 
       - name: Print Custom Message
         run: echo "Deploying application now 🚀"
+
+      - name : Print Madii
+        run: echo "Hello Madii Don"
