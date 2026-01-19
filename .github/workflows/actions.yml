@@ -1,0 +1,19 @@
+name: Manual API Trigger Workflow
+
+on:
+  repository_dispatch:
+    types: [build]
+  pull_request:
+    types: [closed,assigned,opened,reopened]
+
+jobs:
+  run-github-actions:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Event Info
+        run: echo "Workflow triggered using repository_dispatch"
+
+      - name: Print Custom Message
+        run: echo "Deploying application now 🚀"
