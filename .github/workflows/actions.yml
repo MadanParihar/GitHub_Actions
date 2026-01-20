@@ -16,7 +16,7 @@ jobs:
         run: echo "Workflow triggered using repository_dispatch"
 
       - name: Print Custom Message
-        run: echo "Deploying application now 🚀"
+        run: echo "Deploying application now"
 
       - name : Print Madii
         run: echo "Hello Madii Don"
